@@ -10,14 +10,15 @@ require("./modal.css");
 function Modal(_ref) {
   var text = _ref.text,
     buttonText = _ref.buttonText,
-    hide = _ref.hide;
+    open = _ref.open,
+    setOpen = _ref.setOpen;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("h2", {
     className: "modal-title"
   }, text), /*#__PURE__*/_react.default.createElement("button", {
     className: "modal-button",
-    onClick: hide
+    onClick: setOpen
   }, buttonText)));
 }
 var _default = Modal;
