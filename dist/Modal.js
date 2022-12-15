@@ -12,13 +12,16 @@ function Modal(_ref) {
     buttonText = _ref.buttonText,
     open = _ref.open,
     setOpen = _ref.setOpen;
+  var handleButton = function handleButton() {
+    setOpen(false);
+  };
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("h2", {
     className: "modal-title"
   }, text), /*#__PURE__*/_react.default.createElement("button", {
     className: "modal-button",
-    onClick: setOpen
+    onClick: handleButton
   }, buttonText)));
 }
 var _default = Modal;
