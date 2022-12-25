@@ -1,6 +1,14 @@
 import React from 'react'
 import './modal.css'
 
+/**
+ * modal of confirmation of creation of new employee
+ * @param { string } text - Text content
+ * @param { string } buttonText
+ * @param { boolean } setOpen - Allows to close the modal
+ * @returns
+ */
+
 function Modal({ text, buttonText, open, setOpen }) {
   const handleButton = () => {
     setOpen(false)
